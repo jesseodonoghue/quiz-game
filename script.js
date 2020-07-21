@@ -135,7 +135,7 @@ function startGame () {
     startButtonContainerEl.classList.add('hide');
     questionContainerEl.classList.remove('hide');
     nextQuestion = 0;
-    timer = 30;
+    timer = 60;
     score = 0;
     firstQuestion = true;
     setQuestion();
