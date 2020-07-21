@@ -8,6 +8,9 @@
     <!-- Bootstrap Stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <!-- Google Font CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
@@ -17,51 +20,68 @@
     
     <header>
 
-        <section class="container hi-scores"><a href="hi-scores.html">View High Scores</a></section>
-        <section class="container timer">Time Remaining:</section>
+        <section class="timer-container">Time Remaining:
+            <span class="timer" id="timer">--</span>
+        </section>
 
     </header>
 
     <main>
 
-        <section class="container main-window">
+        <section class="container">
 
-            <div class="row">
+            <!-- Question and Answer Section -->
+            <div class="hide" id="question-container">
+                <div id="question"></div>
+                <div class="btn-grid" id="answer-buttons"></div>
 
-                <article class="col-md-12" id="question">
-
-                    <span>test</span>
-    
-                </article>
-
+                <!-- Correct or Incorrect Section-->
+                <div class="hide" id="status-container">
+                    <span>Last Answer Was:</span>
+                    <span class="ans-correct" id="ans-status">Correct</span>
+                </div>
             </div>
 
-            <div class="row">
+            <!-- Score and Initials Section -->
+            <div class="submit-score hide" id="initials-container">
+                <div class="score-display">Final Score:</div>
+                <div id="score"></div>
+                <input type="text" name="initials" id="initials" class="text-initials" placeholder="Enter your initials">
+                <button class="btn btn-initials" id="btn-initials">Submit</button>
+            </div>
 
-                <article class="col-md-6" id="left-buttons">
+            <!-- High Scores Section -->
+            <div class="hi-score hide" id="hi-score-container">
+                <div class="score-title">High Scores</div>
+                <div class="break"></div>
+                <div>                    
+                    <table id="score-table">
+                    </table>
+                </div>
+                <div class="break"></div>
+                <div class="hi-score-btn">
+                    <button class="btn" id="clear">Clear Scores</button>
+                    <button class="btn" id="restart">Restart Quiz</button>
+                </div>
+            </div>
 
-
-
-                </article>
-
-                <article class="col-md-6" id="right-buttons">
-
-                    
-
-                </article>
-
-            </div>    
+            <!-- Start Button -->
+            <div class="start" id="start-btn">
+                <span class="start-hero">JAVASCRIPT QUIZ</span>
+                <button class="btn btn-start" id="btn-start">Start Quiz</button>
+            </div>
 
         </section>
 
     </main>
 
     <!-- Bootstrap Script -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
 
- 
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 
 
 </body>
