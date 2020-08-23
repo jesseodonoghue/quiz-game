@@ -21,8 +21,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ### References & Resources
 [CSS Tricks](https://css-tricks.com/)
+
 [W3Schools](https://w3schools.com)
+
 [MDN Web Docs](https://developer.mozilla.org/en-US/)
+
 [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
 
 Also a big thank you to all of my instructors and classmates whose advice and assistance made this project what it is!
